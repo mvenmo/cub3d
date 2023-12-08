@@ -5,7 +5,7 @@
 git submodule update --init
 
 2) Compile:
-make
+make cub3d
 
 3) Play:
 ./cub3d maps/subject.cub
