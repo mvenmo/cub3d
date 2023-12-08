@@ -1,6 +1,8 @@
 # cub3d
 ## simple cub3d for Ecole42 (mvenmo & botilia)
 
+Compile:
+make
+
 Use:
-1) make
-2) ./cub3d maps/subject.cub
+./cub3d maps/subject.cub
