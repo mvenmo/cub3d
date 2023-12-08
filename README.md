@@ -1,5 +1,5 @@
 # cub3d
-## simple cub3d for Ecole42 (mvenmo & botilia)
+## simple cub3d for SberSchool21 (Ecole42) (mvenmo & botilia)
 
 1) Get git submodules if you cloned repository without --recursive option:
 git submodule update --init
