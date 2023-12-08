@@ -1,8 +1,11 @@
 # cub3d
 ## simple cub3d for Ecole42 (mvenmo & botilia)
 
-Compile:
+1) Get git submodules if not do it yet:
+git submodule update --init
+
+2) Compile:
 make
 
-Use:
+3) Play:
 ./cub3d maps/subject.cub
