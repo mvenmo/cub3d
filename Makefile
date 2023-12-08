@@ -6,7 +6,7 @@
 #    By: botilia <botilia@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/04 18:39:08 by botilia           #+#    #+#              #
-#    Updated: 2022/07/15 14:29:02 by botilia          ###   ########.fr        #
+#    Updated: 2023/12/08 12:07:30 by mvenmo           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,6 +39,7 @@ OBJ		=	$(patsubst %.c,%.o,$(SRC))
 all		:	$(NAME)
 
 $(NAME)	:	$(OBJ) $(HEADERS)
+		@git submodule update --init
 		@make -C $(LIBDIR)/
 		@cp	$(LIBDIR)/$(LIBFT) .
 		@make -C $(MINDIR)/
