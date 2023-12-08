@@ -6,11 +6,11 @@
 #    By: botilia <botilia@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/04 18:39:08 by botilia           #+#    #+#              #
-#    Updated: 2023/12/08 12:07:30 by mvenmo           ###   ########.fr        #
+#    Updated: 2023/12/08 12:17:19 by mvenmo           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	=	cub3D
+NAME	=	cub3d
 
 CFLAGS	=	-Wall -Wextra -Werror
 CC		=	cc
@@ -38,8 +38,10 @@ OBJ		=	$(patsubst %.c,%.o,$(SRC))
 
 all		:	$(NAME)
 
-$(NAME)	:	$(OBJ) $(HEADERS)
+GIT		:
 		@git submodule update --init
+
+$(NAME)	: GIT $(OBJ) $(HEADERS)
 		@make -C $(LIBDIR)/
 		@cp	$(LIBDIR)/$(LIBFT) .
 		@make -C $(MINDIR)/
